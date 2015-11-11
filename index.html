@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tuesday Homework</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+        <h1 class="headerText">
+          Your Contacts
+        </h1>
+        <span>•</span>
+        <a class="topNav" href="#">Make a new contact</a>
+        <a class="topNav" href="#contacts">Saved contacts</a>
+    </header>
+    <main>
+
+      <section class="mainBody">
+
+      </section>
+    </main>
+
+
+
+
+    <script type="text/template" id="formTemplate">
+      <input class="emailInput" type="text" name="name" value="" placeholder="Email"><br>
+      <input class="nameInput" type="text" name="name" value="" placeholder="Name (First, Last)"><br>
+      <input class="phoneInput" type="text" name="name" value="" placeholder="Phone Number"><br>
+      <input class="twitInput" type="text" name="name" value="" placeholder="Twitter"><br>
+      <input class="submitBtn" type="button" name="name" value="Submit"><br>
+    </script>
+    <script type="text/template" id="contactsTemplate">
+      <% _.forEach(contacts, function(contact){ %>)
+        <div class="contactBox">
+          <span><%= contact.email %></span><br>
+          <span><%= contact.name %></span><br>
+          <span><%= contact.phone %></span><br>
+          <span><%= contact.twitter %></span><br>
+        </div>
+      <% }) %>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
