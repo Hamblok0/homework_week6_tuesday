@@ -84,14 +84,13 @@ var contactsRouter = Backbone.Router.extend({
   },
 
   contacts: function() {
-    var contactModel = new contact();
     var contactsDude = new contacts();
-    contactsDude.fetch().then(function(){
+    contactsDude.fetch({success:(function(collection, data, options){
       var view = new contactView({
-        model: contact
+        collection: contactsDude
       });
       $('.mainBody').html(view.render().$el);
-    });
+    }) })
   }
 
 });
