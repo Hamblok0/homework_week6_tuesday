@@ -5,6 +5,7 @@
 body {
   margin: 0;
 }
+
 header {
   background-color: #2A7E43;
   padding: 10px 0 10px 0;
@@ -16,6 +17,17 @@ header {
   margin: 0;
 }
 
+.topNav {
+  text-decoration: none;
+  font-family: 'Dancing Script', cursive;
+  color: #F2EF11;
+  margin-right: 15px;
+}
+
+.dunkelLinks {
+  text-align: center;
+
+}
 main {
   background-color: #29506D;
 }
@@ -30,6 +42,7 @@ main {
     border-radius: 3px;
     border: none;
   }
+
   .submitBtn {
     display: inline-block;
     margin-top: 20px;
@@ -39,8 +52,16 @@ main {
     width: 100px;
     height: 30px;
     background-color: white;
+  }
+}
 
 
-
+.contactBox {
+  padding: 20px;
+  .contInfo {
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.3em;
+    text-decoration: none;
   }
 }

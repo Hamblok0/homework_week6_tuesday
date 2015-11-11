@@ -13,6 +13,15 @@ header {
   font-size: 1.8em;
   margin: 0; }
 
+.topNav {
+  text-decoration: none;
+  font-family: 'Dancing Script', cursive;
+  color: #F2EF11;
+  margin-right: 15px; }
+
+.dunkelLinks {
+  text-align: center; }
+
 main {
   background-color: #29506D; }
 
@@ -34,5 +43,13 @@ main {
     width: 100px;
     height: 30px;
     background-color: white; }
+
+.contactBox {
+  padding: 20px; }
+  .contactBox .contInfo {
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.3em;
+    text-decoration: none; }
 
 /*# sourceMappingURL=styles.css.map */
